@@ -23,7 +23,7 @@ public class Conexion {
             StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
             Class.forName("com.mysql.jdbc.Driver");
-            conexion= (Connection) DriverManager.getConnection("jdbc:mysql://34.94.92.8:3306/nixdb","neriadmin","1234");
+            conexion= (Connection) DriverManager.getConnection("jdbc:mysql://34.94.92.8:3306/nixdb","CotaAdmin","1234");
         } catch (Exception e) {
            //Toast.makeText(getActivity(),e.getMessage(),Toast.LENGTH_LONG).show();
         }
